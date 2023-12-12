@@ -1,0 +1,7 @@
+<h1 class="search-text">Search here......</h1>
+<div class="search-container">
+  <input id="search" [(ngModel)]="searchInput" (input)="onInputChange()" placeholder="Search">
+  <div class="suggestions" *ngIf="filteredWords.length > 0">
+    <div *ngFor="let word of filteredWords" (click)="selectSuggestion(word)">{{ word }}</div>
+  </div>
+</div>

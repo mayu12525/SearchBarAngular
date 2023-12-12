@@ -1,0 +1,33 @@
+.search-text{
+    text-align: center;
+}
+
+.search-container {
+    position: relative;
+    margin-left: 40rem;
+  }
+  
+  input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .suggestions {
+    position: absolute;
+    width: 200px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  
+  .suggestions div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .suggestions div:hover {
+    background-color: #f0f0f0;
+  }
+  
